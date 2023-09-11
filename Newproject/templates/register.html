@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nre registration</title>
+</head>
+<body>
+<h2>The team fire fighters </h2>
+<form action="" method="POST">
+    {% csrf_token %}
+    <input type="text" name="username" placeholder="Enter the username"><br>
+    <input type="text" name="first_name" placeholder="Enter the firstname"><br>
+    <input type="text" name="last_name" placeholder="Enter the lastname"><br>
+    <input type="email" name="email" placeholder="Enter the email"><br>
+    <input type="password" name="password" placeholder="Enter the password"><br>
+    <input type="password" name="password1" placeholder="Enter the confirm password"><br>
+    <input type="submit">
+</form>
+</body>
+</html>
